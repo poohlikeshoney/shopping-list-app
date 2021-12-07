@@ -1,0 +1,73 @@
+:root {
+  /* COLOR */
+  --white-color: #fff;
+  --light-gray-color: #f2f5fa;
+  --blue-color: #3c74dd;
+  --dark-blue-color: #0e2045;
+  --red-color: #fe5c5c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+}
+ul li span.text {
+  width: 90%;
+}
+ul li input[type="checkbox"] {
+  width: 5%;
+  border: 1px solid #ffbb00;
+}
+ul li span.delete {
+  text-align: center;
+  line-height: 30px;
+  padding-left: 8px;
+  font-size: 18px;
+}
+.fas.fa-trash-alt {
+  color: var(--red-color);
+}
+.container {
+  max-width: 450px;
+  height: 100vh;
+  margin: 0 auto;
+  background: var(--light-gray-color);
+}
+h1 {
+  background: var(--blue-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px 0;
+}
+.wirte_list {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  max-width: 450px;
+  width: 100%;
+}
+.wirte_list input {
+  flex: 85%;
+  border: 1px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+.wirte_list button {
+  flex: 15%;
+  background: var(--dark-blue-color);
+  color: var(--white-color);
+  border: none;
+}
